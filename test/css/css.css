@@ -1,0 +1,32 @@
+@keyframes moveright {
+  0% {transform:translate(0px,0px);}
+  25%{transform:translate(250px,250px);border-bottom:120px solid green;}
+  75%{transform:translate(250px,250px);}
+  100% {transform:translate(500px,500px);border-bottom:120px solid orange;}
+}
+@keyframes moveleft {
+  0% {transform:translate(0px,0px);}
+  25%{transform:translate(-250px,-250px);border-top:120px solid blue;}
+  75%{transform:translate(-250px,-250px);}
+  100% {transform:translate(-500px,-500px);border-top:120px solid purple;}
+}
+
+.triangle1 {
+  width: 0;
+  height: 0;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-bottom: 120px solid red;
+  animation: moveright 3s infinite;
+}
+
+.triangle2 {
+  width: 0;
+  height: 0;
+  margin-top:430px;
+  margin-left:500px;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-top: 120px solid red;
+  animation: moveleft 3s infinite;
+}
